@@ -1,0 +1,20 @@
+@import url(./_no-active/header__lang_no-active.css);
+
+.header__lang {
+  color: #fff;
+  margin-left: 18px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__lang:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 700px) {
+  .header__lang {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

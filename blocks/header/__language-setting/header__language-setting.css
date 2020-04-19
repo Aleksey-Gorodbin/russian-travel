@@ -1,0 +1,21 @@
+.header__language-setting {
+  list-style-type: none;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-top: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  .header__language-setting {
+    padding-top: 22px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .header__language-setting {
+    padding-top: 14px;
+  }
+}
+

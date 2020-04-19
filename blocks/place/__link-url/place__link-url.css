@@ -1,0 +1,13 @@
+.place__link-url {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 1024px) {
+  .place__link-url {
+    margin-top: 0;
+    line-height: 12px;
+  }
+}

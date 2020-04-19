@@ -1,0 +1,25 @@
+@import url(./__link/cover__link.css);
+
+@import url(./__title/cover__title.css);
+
+@import url(./__subtitle/cover__subtitle.css);
+
+.cover {
+  background-image: url(../../images/cover-trains.jpg);
+  background-color: rgba(42, 44, 47,.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.cover:hover {
+  background-image: url(../../images/cover-trains.jpg);
+  background-color: rgba(42, 44, 47,.8);
+}
+
+@media screen and (max-width:1279px) {
+  .cover {
+    width: 100%;
+  }
+}
