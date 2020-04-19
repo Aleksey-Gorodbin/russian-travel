@@ -6,19 +6,20 @@
 
 .cover {
   background-image: url(../../images/cover-trains.jpg);
-  background-color: rgba(42, 44, 47,.3);
+  background-color: rgba(42, 44, 47, 0.3);
   background-blend-mode: multiply;
   background-size: cover;
   max-width: 1184px;
   margin: 0 auto;
+  transition: background-color 0.3s linear 0.2s;
 }
 
 .cover:hover {
   background-image: url(../../images/cover-trains.jpg);
-  background-color: rgba(42, 44, 47,.8);
+  background-color: rgba(42, 44, 47, 0.8);
 }
 
-@media screen and (max-width:1279px) {
+@media screen and (max-width: 1279px) {
   .cover {
     width: 100%;
   }

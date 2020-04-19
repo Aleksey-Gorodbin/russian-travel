@@ -2,16 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="./blocks/fonts/Inter Hinted for Windows/Web/inter.css"
-    />
+    <link rel="stylesheet" href="./blocks/fonts/Web/inter.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Путешествия по России</title>
   </head>
   <body>
     <div class="page">
+      <!--В этом блоке находится логотин и панель переключения языков.-->
       <header class="header">
         <img
           src="./images/header-logo.svg"
@@ -19,13 +17,14 @@
           class="header__logo"
         />
         <ul class="header__language-setting">
-          <li><a href="#" class="header__lang">Ru</a></li>
+          <li><a href="#" class="header__lang header__lang_active">Ru</a></li>
           <li>
-            <a href="#" class="header__lang header__lang_no-active">En</a>
+            <a href="#" class="header__lang">En</a>
           </li>
         </ul>
       </header>
       <main class="content">
+        <!--В этом блоке находится заголок странины.-->
         <section class="lead">
           <h1 class="lead__title">Путешествия по России</h1>
           <p class="lead__subtitle">
@@ -42,6 +41,7 @@
             </figcaption>
           </figure>
         </section>
+        <!--В этом блоке находится информация о возможностях путешествий по России.-->
         <section class="intro">
           <h2 class="intro__title">Чего мы там не видели?</h2>
           <p class="intro__text">
@@ -76,6 +76,7 @@
             </li>
           </ul>
         </section>
+        <!--В этом блоке фотографии живописных мест России.-->
         <section class="photo-grid">
           <img
             src="./images/photo-grid-train.jpg"
@@ -138,6 +139,7 @@
             class="photo-grid__item"
           />
         </section>
+        <!--В этом блоке находится информация о самых популярных среди туристов локаций.-->
         <section class="places">
           <div class="place">
             <h2 class="place__title">Куршская коса</h2>
@@ -147,7 +149,7 @@
               class="place__image"
             />
             <div class="place__website">
-              <p class="place__link-url">URL</p>
+              <p class="place__link-url">url</p>
               <a href="http://park-kosa.ru" target="_blank" class="place__link"
                 >park-kosa.ru</a
               >
@@ -177,7 +179,7 @@
               class="place__image"
             />
             <div class="place__website">
-              <p class="place__link-url">URL</p>
+              <p class="place__link-url">url</p>
               <a
                 href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
                 target="_blank"
@@ -210,7 +212,7 @@
               class="place__image"
             />
             <div class="place__website">
-              <p class="place__link-url">URL</p>
+              <p class="place__link-url">url</p>
               <a
                 href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
                 target="_blank"
@@ -243,7 +245,7 @@
               class="place__image"
             />
             <div class="place__website">
-              <p class="place__link-url">URL</p>
+              <p class="place__link-url">url</p>
               <a
                 href="https://vk.com/baikalmile"
                 target="_blank"
@@ -275,7 +277,7 @@
               class="place__image"
             />
             <div class="place__website">
-              <p class="place__link-url">URL</p>
+              <p class="place__link-url">url</p>
               <a href="http://vodlozero.ru" target="_blank" class="place__link"
                 >http://vodlozero.ru/</a
               >
@@ -292,6 +294,7 @@
             </div>
           </div>
         </section>
+        <!--В этом блоке ссылка на популярный маршрут.-->
         <section class="cover">
           <a
             href="https://stampsy.com/na-elektrichkakh-do-baikala"
@@ -306,33 +309,53 @@
           </a>
         </section>
       </main>
+      <!--В этом блоке навигационная панель и автор сайта.-->
       <footer class="footer">
-        <nav>
+        <nav class="footer__nav-menu">
           <ul class="footer__list-link">
-            <li class="footer__li">
-              <a href="https://yandex.ru/maps" class="footer__link">Карты</a>
+            <li class="footer__list-item">
+              <a
+                href="https://yandex.ru/maps"
+                target="_blank"
+                class="footer__link"
+                >Карты</a
+              >
             </li>
-            <li class="footer__li">
-              <a href="https://yandex.ru/pogoda" class="footer__link">Погода</a>
+            <li class="footer__list-item">
+              <a
+                href="https://yandex.ru/pogoda"
+                target="_blank"
+                class="footer__link"
+                >Погода</a
+              >
             </li>
-            <li class="footer__li">
-              <a href="https://rasp.yandex.ru" class="footer__link"
+            <li class="footer__list-item">
+              <a
+                href="https://rasp.yandex.ru"
+                target="_blank"
+                class="footer__link"
                 >Расписание</a
               >
             </li>
-            <li class="footer__li">
-              <a href="https://calendar.yandex.ru" class="footer__link"
+            <li class="footer__list-item">
+              <a
+                href="https://calendar.yandex.ru"
+                target="_blank"
+                class="footer__link"
                 >Календарь</a
               >
             </li>
-            <li class="footer__li">
-              <a href="https://travel.yandex.ru" class="footer__link"
+            <li class="footer__list-item">
+              <a
+                href="https://travel.yandex.ru"
+                target="_blank"
+                class="footer__link"
                 >Путешествия</a
               >
             </li>
           </ul>
         </nav>
-        <p class="footer__copyright">&copy 2020. Алексей Городбин</p>
+        <p class="footer__copyright">&copy; 2020. Алексей Городбин</p>
       </footer>
     </div>
   </body>
